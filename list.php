@@ -7,18 +7,35 @@
     <title>Lyrics</title>
 </head>
 <body>
-<?
+
+<h1>Lyrics</h1>
+<?php
 
 include 'lyrics.php';
 
 $listOfSongs = array(
-    "Super Trouper" => "<b>" . $superTrouper . "</b>, ",
-    "Mamma Mia" => "<b>" . $mammaMia . "</b>",
-    "Fernando" => "<b>" . $fernando . "</b>",
-    "Honey, Honey" => "<b>" . $honeyHoney . "</b>",
-    "Chiquitita" => "<b>" . $chiquitita . "</b>",
-    "Dancing Queen" => "<b>" . $dancingQueen . "</b>",
+    "Super Trouper" => $superTrouper,
+    "Mamma Mia" => $mammaMia,
+    "Fernando" => $fernando,
+    "Honey, Honey" => $honeyHoney,
+    "Chiquitita" => $chiquitita,
+    "Dancing Queen" => $dancingQueen
 );
+
+
+function printArray($array) {
+    
+    echo "<ul>\n";
+
+    foreach ($array as $key => $value) {
+        echo "<li><a href=\"list.php?key=".$value." \">".$key."</a></li>\n";
+    }
+
+    echo "</ul>\n";
+}
+
+printArray($listOfSongs);
+echo $_GET["key"];
 
 ?>
 
