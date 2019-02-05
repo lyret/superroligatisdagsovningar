@@ -2,6 +2,7 @@
 $rand = rand(0,1);
 if ($rand == 0) {
     http_response_code(404);
+    include('404.html');
     die();
 }
 ?>
