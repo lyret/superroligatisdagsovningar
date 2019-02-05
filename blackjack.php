@@ -78,7 +78,7 @@ if (isset($_POST['hitme'])) {
     } else {
         echo 'Du måste ta ett kort';
     }
-    
+
 }
 ?>
 <form action="blackjack.php" method="post">
