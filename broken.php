@@ -15,5 +15,6 @@ if ($rand == 0) {
     <title>Broken</title>
 </head>
 <body>
+    <p>Success</p>
 </body>
 </html>
