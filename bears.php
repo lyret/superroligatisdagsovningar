@@ -7,12 +7,6 @@
 
     class bear extends Animal{
 
-        /*private $lastName = "Olsson";*/
-
-        /*public function get_name() {
-            return $this->lastName;
-        }*/
-
         public function whatsMyName($name, $separator = ". "){
             if ($name == "Nalle Puh") {
                 $prefix = "Snälla - ";
