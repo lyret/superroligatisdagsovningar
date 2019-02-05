@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +10,24 @@
     <title>Math</title>
 </head>
 <body>
-        <h1> Test </h1> 
+    
+
+
+        <form method="post" action=''>  
+        Number: <input type="text" name="number1"> <br>
+        Number: <input type="text" name="number2"> <br>
+        <input type="submit" name="submit" value="submit">
+        </form>
+<?php
+        
+        if(isset($_POST['submit']))
+               {
+                    $number1 = $_POST['number1'];
+                    $number2 = $_POST['number2'];
+                    $answer = $number1 * $number2;
+                       echo  '<textarea rows="5" name="message" cols="30">'. $answer. '</textarea>'; 
+               }
+    
+           ?>
 </body>
 </html>
